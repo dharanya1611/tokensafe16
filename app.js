@@ -242,27 +242,24 @@ adminAddress="0x1E8A1E3423214a4b78BFA87440709867e6163615";
  *      - Blockchain
  *    
  *     description: publish the record in blockchain
- *     produces:
- *       - application/json
+
  *     parameters:
- *       - name: document_no
- *         description: enter your document_no.
- *         in: path
- *         required: true
- *         type: string
- *       - name: document
- *         description: enter your document.
- *         in: path
- *         required: true
- *         type: string
- *       - name: privatekey
- *         description: enter your privatekey.
- *         in: path
- *         required: true
- *         type: string
+ *      - in: body
+ *        name: user
+ *        description: The user to create.      
+ *        properties:
+ *            document_no:
+ *              type: string
+ *            document:
+ *              type: string
+ *            privateKey:
+ *              type: string
+ 
  *     responses:
  *       200:
  *         description: create
+ *       404: 
+ *	       description: error
  */
 
 
@@ -281,17 +278,20 @@ adminAddress="0x1E8A1E3423214a4b78BFA87440709867e6163615";
                     web3 = new Web3(new Web3.providers.HttpProvider("http://adhinet.com:8545"));                            
 
                     var smartContract = web3.adh.contract(abiDefinition).at(adhcontractAddress);
-                    document_no = req.body.document_no;
+                    
 console.log('fgdgds')
-        var     document = req.body.document;
-            var key=req.body.document_no;
+var document = req.body.document;
+console.log(document)
+var document_no=req.body.document_no;
+var key= document_no
+console.log(key)
             // var document=    yourhash-from-screen
             
-                console.log(req.body);
+                // console.log(req.body);
                     // var keyhex = document_no;
-                     console.log(key);
-                     console.log(document)
-                    var keyhex = require('crypto').createHash('md5').update(key).digest("hex") 
+                    //  console.log(key);
+                    //  console.log(document)
+                    var keyhex = require('crypto').createHash('md5').update(document_no).digest("hex") 
 console.log(keyhex ,'ded')
                    //  var txnno = smartContract.enterStructData.sendTransaction(keyhex, record.recipient , record.document_no, record.document, {from:adminAddress , gas: 3000000, gasPrice:1000000000});
                    //  console.log(txnno);
