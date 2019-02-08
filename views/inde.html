@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Token Safe</title>
+
+    <link href="public/css/bootstrap.min.css" type="text/css" rel="stylesheet"></link>
+
+    <!-- Custom styles for this template -->
+    <link href="/public/css/main.css"  type="text/css"rel="stylesheet"></link>
+    <!-- Bootstrap core CSS -->
+   
+  </head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">Token Safe</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+    
+  
+    
+   
+    <section class="section"  >
+      <div class="container">
+        <div class="row">
+        
+  
+          <div class="container">
+              <div class="stepwizard">
+                  <div class="stepwizard-row setup-panel">
+                      <div class="stepwizard-step2 col-xs-3"> 
+                          <a href="#step-1" type="button" class="btn btn-success btn-circle" style="font-weight:bolder; font-size:12px; color:#000">1</a>
+                          <p style=" font-size:12px;  font-weight:bolder"> Introduction</p>
+                      </div>
+                  
+    
+    
+                      <div class="stepwizard-step col-xs-3"> 
+                        <a href="#step-3" type="button" class="btn btn-default btn-circle" style="font-weight:bolder ; font-size:12px; color:#000;"disabled="disabled" >2</a>
+                        <p style=" font-size:12px;  font-weight:bolder; color:#000;">create record</p>
+                    </div>
+                     
+                    
+                      <div class="stepwizard-step col-xs-3"> 
+                          <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled" style="font-weight:bolder; color:#000; font-size:12px;">3</a>
+                          <p style=" font-size:12px;  font-weight:bolder ; color:#000;">publish record</p>
+                      </div>
+                      <div class="stepwizard-step3 col-xs-3"> 
+                        <a href="#step-5" type="button" class="btn btn-default btn-circle" disabled="disabled" style="font-weight:bolder ; color:#000; font-size:12px;">4</a>
+                        <p style=" font-size:12px;  font-weight:bolder; color:#000;">retrive record</p>
+                    </div>
+                 
+                    <!-- <div class="stepwizard-step3 col-xs-3"> 
+                        <a href="#step-6" type="button" class="btn btn-default btn-circle" disabled="disabled">5</a>
+                        <p><small>thank you</small></p>
+                    </div> -->
+                  </div>
+              </div>
+            <br><br><br>
+            <div class="formco">
+            <form role="form">
+                <div class="panel panel-primary setup-content" id="step-1">
+                  <div class="row">
+                    
+                      <div class="col-md-5">
+                         <div>
+  <h3 class="panel-title" style="padding-left:18% ; font-size:18px;" >DESCRIPTION</h3>
+  <p style="font-size:17px; padding-left:4%;">
+  
+  1. First enter your first name and last Name.<br>
+  2. In this process we have to create the hash value of your data<br>
+  3. By using the hash value  of your of data and the key value <br>
+   we have create the record, Publish the record,retrive the record
+  
+  </p>
+  
+  
+  
+  
+                         </div>
+                        </div>
+                    <div class="col-md-7">
+                    <div class="panel-heading">
+                         <h3 class="panel-title"style="padding-left:10% ;     font-size: 18px;
+                         ">INTRODUCTION</h3>
+                         <h style="     font-weight: normal;
+                         font-size: 15px;">Let's learn How to upload your confidential data on Recordskeeper Adhichain in just few clicks.</h>
+                    </div>
+  
+                    <br>
+                    <div class="panel-body">
+                        
+                        <div class="form-group">
+                        <div style=" padding-left:10%;">
+                            <label class="control-label">First Name</label>
+                          <input maxlength="200" type="text" required="required" class="form1-control"  style=" font-size:12px; "placeholder="Enter First Name" />
+                        </div> </div>
+                    
+                   
+                        <div class="form-group">
+                       
+                           <div style="  padding-left:10%;">
+                              <label class="control-label">Last Name</label>    <input maxlength="200" type="text" required="required" class="form1-control"  style=" font-size:12px; " placeholder="Enter Last Name" />
+                          </div>
+                     
+                      
+                            </div>
+                           
+                        
+                            <form id="comment_form"  action='/submit' method="post">
+                              
+                              <div class="g-recaptcha" style="padding-left:10%" data-sitekey="6Lc-U4UUAAAAAF_NJBs-p5CHpiJlnpbz8ki6C5kq"></div><br>
+                              <div class="submitform">
+                              <!-- <input type="submit" name="submit"  value="Post comment"><br><br> -->
+                            </div>
+                            </form>
+  <br>
+   <div  style="padding-left:12%; "><button class="btn btn-primary  nextBtn pull-right"  style="background-color:blue";  type="button" onclick="heello();"  >Next</button></div>    
+  
+                   <!-- onclick="calculate();"
+  
+                   <input type="button" onclick="calculate();" value="Calculate" class="btn primary" name="post-format" /> -->
+                    
+                    </div>
+  
+                    <!-- <script>
+  function heello() {
+  alert("helloworld")
+  }
+  
+  
+                    </script> -->
+                    </div>
+  
+                  </div>
+                </div>
+                
+               
+                
+                <div class="panel panel-primary setup-content" id="step-3">
+  
+                  <div class="row">
+  <div class="col-md-5" >
+  
+  <div>
+  <h3 class="panel-title" style="padding-left:18% ; font-size:18px;" >DESCRIPTION</h3>
+  <p  style=" padding-left:4%;">
+  1. Enter your identifier key<br>
+  2. Enter your data in the form of jason or in the file form.<br>
+  3. Collect the hash for your data or the file form<br>
+  for example the hash key will be like as a i.e...
+  <p style=" font-weight:bolder; padding-left:4%; font-size:13px; color:blue">
+  cd0aa9856147b6c5b4ff2b7dfee5da20aa38253099ef1b4a
+  </p>
+  <!-- <p style="font-size:13px; padding-left:4%">
+  4.Copy the hash value and the key value for the future process.
+  
+  </p> -->
+  
+  
+  </p>
+  
+  </div>
+  
+  
+  
+  
+  
+  </div>
+  <div class="col-md-7">
+  <!-- <form action="/edi/createone/" method="POST" id="sign-up-form" class="form-signin"> -->
+  
+                  
+                    <div class="panel-heading">
+                         <h3 class="panel-title" style="padding-left:18% ; font-size:18px; " >RECORD YOUR DATA</h3>
+                    </div>
+                    <div class="panel-body">
+                           
+                        <h  style=" font-size:15px;">Enter your data identifier which is associated with your data and it will be publically visible on blockchain.
+  
+                          </h><br><br>
+                        
+                        <div class="form-group"  style="padding-left:10%;"  >
+                        <label>Enterkey:</label>  
+                            <input maxlength="200" type="text"    style="font-size:14px;"  required="required" class="form1-control" name="number" id="number"  />
+                        </div>
+                        <div class="form-group" style="padding-left:10%">
+                            <div>
+                     
+  
+                      <label>Upload your data in file</label>
+                                <input type="file"  style="font-size:14px;" onchange="calculate()"   id="file"/>
+                                <!-- <input type="button"   style="font-size:14px;"    onclick="calculate();" value="Calculate"   class="btn primary" /> 
+-->
+<br><br> 
+                              </div>
+                              <div   style="padding-left:35%; color:blue;font-weight:bolder;" >(OR)</div><br>
+
+                              <label>Type your data in text:</label>&emsp;
+                              <input maxlength="200"  id="input" style="width:62%;height:62px;" onkeyup="calcuci()"  ></input><br><br>
+                              <!-- <input id="button"name="document"   type="button" style="width:20%; font-size:12px;"onclick="calcuci();" value="calculate"> -->
+                              <div>
+
+                                <label>Hash value of your data:</label>
+                                <input maxlength="200"  type="text"   name="output" id="output" style=" width:62%; "   /></input></div>
+            
+                                <!-- <script>
+                                    document.getElementById('button').onclick = function () {
+                                      document.getElementById('output').value = sha256(document.getElementById('input').value);
+                                    };
+                                  </script> -->
+                              <div >  
+                                  <button class="btn btn-primary  nextBtn pull-right" style="background-color:blue" type="button"  onclick="vari();"  >Next</button>
+                                </div>
+                            <br>
+                         
+                              
+
+  
+                   
+                                          </div>
+
+
+                  </div>
+  
+  
+                </div>
+                </div>
+  
+  
+              </div>  
+                
+                <div class="panel panel-primary setup-content" id="step-4">
+                  <div class="row">
+  
+                 <div class="col-sm-7" > 
+                  <form action='/create' method="post">
+                     <div class="panel-heading">
+                         <h3 class="panel-title" style="font-size:18px ; padding-left:22%">PUBLISH RECORD</h3>
+                    </div><br>
+                    
+  
+                    <div class="panel-body">
+                           
+                     
+                        <div class="form-group">
+                            <!-- <label class="control-label"   style="font-size:16px; padding-left:34%">Company Name</label> -->
+                           <div>&emsp;&emsp;&emsp;&emsp;&emsp; <label>Key:</label> <input maxlength="200" type="text"    style="font-size:14px;"  required="required" class="form1-control"  name="document_no"
+                            id="document_no"
+                             />
+                      
+                      </div>    </div>
+                        <div class="form-group">
+                            <!-- <label class="control-label">Company Address</label> -->
+                       <label>Hashvalue of data</label>     <input maxlength="200" type="text"  style="font-size:14px;" required="required"  class="form1-control" style=" width:62%; " name="document"    id ="document" />
+                        </div>
+                        <!-- <div style=" padding-left:26%">
+                        <button class="btn btn-primary  nextBtn pull-right"  style="background-color:blue"; type="button">Publish</button>
+                        </div> -->
+                        <h3 class="panel-title"  style="font-size:18px">Unlock Your Wallet</h3>
+<label>Enter privateKey:</label>
+                        <input maxlength="200"  style="font-size:14px; width:63%;"  required="required" class="form1-control" name="privateKey"  id="privateKey"placeholder="Enter Your Private Key" ></input><br><br>
+                       
+                        <div class="submitform">
+                          <button class="btn btn-primary   "  style="background: blue; font-size:12px;">send blockchain</button>
+                              </div>
+                             <div  id="message"></div>
+                        </form>
+
+                        <!-- <script>
+                        function send() {
+		
+                          var doc_no =  document.getElementById("document_no").value; 
+                          var doc=document.getElementById("document").value
+                                $.post('/create/'+doc_no+doc, function (data) {
+                                        console.log('dggd')
+                                        document.getElementById("message").innerHTML = data
+                                        console.log('dfddr',data)
+                          })
+                        };</script> -->
+                       
+
+
+                       
+                      
+
+                    </div>
+                
+  
+  
+                  </div>
+              <div class="col-md-4" >
+  
+                <!-- <div class="panel-heading">
+                  <h3 class="panel-title"  style="font-size:18px">Unlock Your Wallet</h3>
+             </div> -->
+           
+        
+ 
+        <div>  </div>
+  
+  
+  <br>
+  
+  
+        <div class="panel-heading">
+          <h3 class="panel-title"  style="font-size:18px"> If you don't Wallet</h3>
+          <p>Create by using the following </p>
+     </div>
+  
+     <div>
+      <a href="http://wallet.adhichain.org" style="font-size:14px;" target="_blank">1. http://wallet.adhichain.org</a>
+      </div>&emsp;&emsp;&emsp;&emsp;
+      OR
+      <div>
+  
+    <a href="https://chrome.google.com/webstore/detail/adhi-wallet/jnhbnllkbhlkblcakbeifoppbiafigpj"  style="font-size:14px;"  target="_blank">2. Adhi Wallet - Google Chrome</a>
+    </div> 
+            <br> 
+ &emsp;&emsp;   <button class="btn btn-primary  nextBtn pull-right " type="button"   style="background: blue; font-size:12px;">Next</button>
+  
+  </div>
+  
+  
+  
+  
+           
+                </div>
+                
+                </div>
+                <div class="panel panel-primary setup-content" id="step-5">
+                  <div class="row" >
+                    <div class="col-md-6" >
+
+                        <div class="panel-heading">
+                            <h3 class="panel-title" style="font-size:18px ; padding-left:22%">Description</h3>
+                       </div>
+
+
+
+                    </div>
+                    <div class="col-md-6" >
+                       
+                  <div class="panel-heading">
+                       <h3 class="panel-title"  style=" padding-left:14% ; font-size:18px">RETRIVE RECORD</h3>
+                  </div><br>
+                  <form   >
+                  <div class="panel-body">
+                      <div class="form-group"  >
+                          <!-- <label class="control-label">Company Name</label> -->
+                          <input maxlength="200" type="text" required="required" style="font-size:12px;" class="form1-control"  id="documen_no"  placeholder="Enter Your Key" />
+                    
+                        
+                    
+                        </div>
+                      <!-- <div class="form-group"  >
+                          <label class="control-label">Company Address</label>
+                          <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Address" />
+                      </div> -->
+                      <div>
+                          <button class="btn btn-primary  " type="button" style="background-color:blue; font-size:12px;" 
+                          
+                          onclick = "verify();"       >Retrive</button>
+                      </div>
+                      
+  <br>
+                      <div>
+  
+                        <textarea rows="15" cols="50" id="documen"> </textarea>
+
+                      
+                      </div>
+                     
+                  
+                    </form> 
+                    <script>
+
+                    
+                               
+                             
+function verify() {
+		
+  var doc_no =  document.getElementById("documen_no").value;   
+        $.get('/view/'+doc_no, function (data) {
+                  document.getElementById("documen").value = data;
+  })
+};
+
+                                      
+                      
+                      
+                      
+                      </script>
+                    
+                  </div>
+
+                  
+
+
+                  </div>
+              </div>
+            
+             
+            <!-- <script language="JavaScript">
+              function showInput() {
+                  document.getElementById("document_no").value; 
+                  $.get('/view', function (data) {
+                  document.getElementById("document").innerHTML  = data;
+         });
+              }
+</script> -->
+              <div class="panel panel-primary setup-content" id="step-6">
+                  <div class="panel-heading">
+                       <!-- <h3 class="panel-title">thankyou</h3> -->
+                  </div>
+                  <div class="panel-body">
+                      <!-- <div class="form-group">
+                          <label class="control-label">Company Name</label>
+                          <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Name" />
+                      </div>
+                      <div class="form-group">
+                          <label class="control-label">Company Address</label>
+                          <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Address" />
+                      </div> -->
+  
+                      <!-- <h3>Thank you</h3> -->
+  
+                      
+  
+                      <div style="padding-left:45%">
+                     
+                       <button class="btn btn-primary  nextBtn pull-right"  style="background-color:blue"; type="submit">Finish!</button>
+                  </div>
+                 
+                  <div>
+                     
+                      
+                      <input type="file" id="file"/>
+                      <input type="button" onclick="calculate();" value="Calculate" class="btn primary" name="post-format" /><br><br>
+                      <div type="text"    >Hashresult</div>
+                    </div>
+                    <div>
+                        <div class="panel-heading">
+                  <h3 class="panel-title">SHA256</h3>
+                   </div>
+                    <textarea id="input"  style="width:60%;"></textarea>
+                  <div>  <input id="button" type="button" style="width:30%" value="calculate"></div>
+                  <div>
+                    <textarea id="output"  style="text-align: center;width:60%;"></textarea></div>
+  
+                    <script>
+                        document.getElementById('button').onclick = function () {
+                          document.getElementById('output').value = sha256(document.getElementById('input').value);
+                        };
+                      </script>
+                      </div>
+                </div> 
+              </div>
+              <div class="panel panel-primary setup-content" id="step-7">
+                <div class="row">
+                  <div class="col-md-4">
+                      <div class="panel-heading">
+                          <h3 class="panel-title"  style="font-size:18px">ACCESS YOUR WALLET</h3>
+                     </div>
+                     <div class="container-lf">
+                     <div> <label><input type="radio" name="post-format" id="post-format-gallery"> 
+                      Keystore File</label></div>  
+                      <div>  <label><input type="radio" name="post-format" id="post-format-gallery2">
+                        Private Key</label></div> 
+                     </div>
+  
+                    <div class="panel-heading">
+                          <h3 class="panel-title"  style="font-size:18px">CREATE YOUR WALLET</h3>
+                     </div>
+                     <div class="container-lf">
+  
+                        <div> <label><input type="radio" name="post-format" id="post-format-gallery3"> 
+                          create wallet</label></div>  
+                     </div>
+                  </div>
+                  <div class="col-md-8">
+                      <div id="gallery-box" >
+                          <div class="panel-heading">
+                              <h3 class="panel-title"  style="font-size:18px">Enter Your Keystore File</h3>
+                         </div>
+                          <label for="upload-photo"    style="cursor: pointer; background-color:mediumaquamarine;">select file...</label>
+                          <input type="file" name="photo" id="upload-photo" ></input>
+                      </div>
+                      <div id="gallery-box2" >
+                          <div class="panel-heading">
+                              <h3 class="panel-title"  style="font-size:18px">Enter Your Private Key</h3>
+                         </div>
+                          <textarea type="text" style="height: 150px; width:100%"  > content...</textarea>
+                          <button class="btn btn-primary   " style="background: blue">unlock</button>
+                            </div>
+                            <div id="gallery-box3" >
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"  style="font-size:18px">click here to create wallet</h3>
+                               </div>
+                               
+                              
+                                  <a href="http://wallet.adhichain.org/" target="_blank">   create wallet</a>
+                               
+                                  </div>
+              </div>
+              </div>
+            </div>
+            </form>
+            </div>
+        </div>
+        </div>
+      </div>
+    </section>
+   
+    <!-- /.row -->
+  
+    <!-- <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 feature-box">
+            <img src="img/fea-1.svg" class="icon-toolkit">
+            <p class="feature-title">
+              Setup and Presale
+            </p>
+            <p>
+              Set your initial token allocation parameters, including total number of tokens, discounts or bonuses and vesting parameters. Collect presale funds at any time.
+            </p>
+          </div>
+          <div class="col-md-4 feature-box">
+            <img src="img/fea-2.svg" class="icon-toolkit">
+            <p class="feature-title">
+              Setup and Presale
+            </p>
+            <p>
+              Set your initial token allocation parameters, including total number of tokens, discounts or bonuses and vesting parameters. Collect presale funds at any time.
+            </p>
+          </div>
+          <div class="col-md-4 feature-box">
+            <img src="img/fea-3.svg" class="icon-toolkit">
+            <p class="feature-title">
+              Setup and Presale
+            </p>
+            <p>
+              Set your initial token allocation parameters, including total number of tokens, discounts or bonuses and vesting parameters. Collect presale funds at any time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- /.row -->
+    <!-- <section class="section blue-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 cta">
+            <h1 style="font-size:18px;">What Does CoinCart Cost?</h1>
+            <p style="font-size:18px;">That's right, 100% free for most sales.</p>
+            <p style="font-size:18px;">Contact our product specialist about pricing for custom deployments and additional services.</p>
+            <a href="#contact" class="btn-rev-white btn-cta" style="font-size:17px;">Schedule a Demo</a>
+          </div>
+          <div class="col-md-4">
+  
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- /.row -->
+<!--   
+    <section class="section big-feature">
+      <div class="container"> -->
+        <!-- <img class="big-img" src="img/big-img.jpeg" alt="big-img" /> -->
+        <!-- <div class="hide-logo"></div>
+        <h1 class="heading-two" style="font-size:22px;">Trust Your Sale to CoinCart</h1>
+        <h2 style="font-size:22px;">Keep your engineering team focused on your product, let us handle the infrastructure.</h2>
+        <div class="big-button">
+          <a class="btn-primary btn-cta" href="#">Shedule a Demo</a>
+        </div>
+        <div class="row feature-content-row">
+          <div class="col-md-4">
+            <p class="feature-content" style="font-size:16px;">
+                Create a custom funding plan with presale allocations, discounts and different purchase tranches.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <p class="feature-content" style="font-size:16px;">
+              Enterprise-grade infrastructure and DDoS protection lets you focus on your project, not configuring firewalls.
+            </p>
+            </div>
+          <div class="col-md-4">
+            <p class="feature-content" style="font-size:16px;">
+              Set dynamic token pricing models to maximize your purchaser base and number of network participants.
+            </p>
+            </div>
+        </div>
+  
+        <div class="row">
+            <div class="col-md-4">
+              <p class="feature-content" style="font-size:16px;">
+                  Create a custom funding plan with presale allocations, discounts and different purchase tranches.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <p class="feature-content" style="font-size:16px;">
+                Enterprise-grade infrastructure and DDoS protection lets you focus on your project, not configuring firewalls.
+              </p>
+              </div>
+            <div class="col-md-4">
+              <p class="feature-content" style="font-size:16px;">
+                Set dynamic token pricing models to maximize your purchaser base and number of network participants.
+              </p>
+              </div>
+          </div>
+      </div>
+    </section> -->
+  
+<!--     
+    <section class="section">
+      <div class="">
+          
+          <div class="testimonial slideshow-container">
+            <h2 class="text-center"  style="font-size:16px;">Testimonials</h2>
+            <div class="mySlides">
+              <q style="font-size:16px;">I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+              <p class="author" style="font-size:16px;">- John Keats</p>
+            </div>
+            
+            <div class="mySlides">
+              <q style="font-size:16px;">But man is not made for defeat. A man can be destroyed but not defeated.</q>
+              <p class="author" style="font-size:16px;">- Ernest Hemingway</p>
+            </div>
+            
+            <div class="mySlides">
+              <q style="font-size:16px;">I have not failed. I've just found 10,000 ways that won't work.</q>
+              <p class="author" style="font-size:16px;">- Thomas A. Edison</p>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+              
+          </div>
+  
+          <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+  
+      </div>
+    </section> -->
+  
+  
+    <!-- <section class="section blue-bg">
+      <div class="container contact">
+        <div class="row ts-row">
+          <div class="col-md-8">
+            <h1 style="font-size:16px;">Ready to Get Started?</h1>
+            <p style="font-size:16px;">Fill out this brief form and our team will be in touch about getting your ICO set up on CoinCart</p>
+          </div>
+          <div class="col-md-4">
+            <a href="#" class="btn btn-white" style="font-size:16px;"> Contact Integration Team </a>
+          </div>
+        </div>
+        <div class="row">
+          <form id="contact" class="contact row">
+            <div class="col-md-4">
+                <label for="prg-tkn-name"style="font-size:16px;">Project or Token Name <span>*</span></label>
+                <input class="form-control" type="text" name="prg-tkn-name" >
+            </div>
+            <div class="col-md-4">
+                <label for="fnd-rsd-gol" style="font-size:16px;">Target Fundraise Goal <span>*</span></label>
+                <input class="form-control" type="text" name="fnd-rsd-gol" >
+            </div>
+            <div class="col-md-4">
+                <label for="plnd-ico-date" style="font-size:16px;">Planned ICO Date <span>*</span></label>
+                <input class="form-control" type="text" name="plnd-ico-date" >
+            </div>
+            <div class="col-md-4">
+                <label for="prg-tkn-name" style="font-size:16px;">Project or Token Name <span>*</span></label>
+                <input class="form-control" type="text" name="prg-tkn-name" >
+            </div>
+            <div class="col-md-4">
+                <label for="fnd-rsd-gol" style="font-size:16px;">Target Fundraise Goal <span>*</span></label>
+                <input class="form-control" type="text" name="fnd-rsd-gol" >
+            </div>
+            <div class="col-md-4">
+                <label for="plnd-ico-date" style="font-size:16px;">Planned ICO Date <span>*</span></label>
+                <input class="form-control" type="text" name="plnd-ico-date" >
+            </div>
+            <div class="col-md-4">
+                <label for="fnd-rsd-gol" style="font-size:16px;">Target Fundraise Goal <span>*</span></label>
+                <input class="form-control" type="text" name="fnd-rsd-gol" >
+            </div>
+            <div class="col-md-4">
+                <label for="plnd-ico-date" style="font-size:16px;">Planned ICO Date <span>*</span></label>
+                <input class="form-control" type="text" name="plnd-ico-date" >
+            </div>
+            <div class="col-md-4">
+                <label for="prg-tkn-name" style="font-size:16px;">Project or Token Name <span>*</span></label>
+                <input class="form-control" type="text" name="prg-tkn-name" >
+            </div>
+            <div class="col-md-12 text-center" >
+                <input class="btn btn-rev-white type="submit" style="font-size:16px;" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section> -->
+      <!-- /.row -->
+  
+    <!-- Footer -->
+    <footer class="py-1 footer-particle ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-left">
+              <p class="m-0 text-white copyright" style="font-size:19px;">Copyright &copy; Token Safe 2018</p>
+          </div>
+          <div class="col-md-6 text-right">
+              <p class="m-0 text-white footer-links" style="font-size:19px;">Links</p>
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </footer>
+  
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+    <script src="js/jquery.bundle.js"></script>
+  
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/q.js/1.4.1/q.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spark-md5/2.0.2/spark-md5.min.js"></script>
+    <!-- <script src='https://www.google.com/recaptcha/api.js?render=6LflSIUUAAAAAPXWQy5gxXGnoKqNnTxxOyZGNXdf'></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script> -->
+    <!-- <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script> -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
+    <script>
+     // Will put our custom code here.
+    </script>
+    <script>
+      $(document).ready(function() {
+        $('#comment_form').submit(function() {
+          $(this).ajaxSubmit({
+            error: function(xhr) {
+              status('Error: ' + xhr.status);
+            },
+           success: function(response) {
+            console.log(response);
+           }
+          });
+          //Very important line, it disable the page refresh.
+          return false;
+        });
+      });
+    </script>
+  
+    <script>
+      
+  
+  $(document).ready(function () {
+  
+    var navListItems = $('div.setup-panel div a'),
+        allWells = $('.setup-content'),
+        allNextBtn = $('.nextBtn');
+  
+    allWells.hide();
+  
+    navListItems.click(function (e) {
+        e.preventDefault();
+        var $target = $($(this).attr('href')),
+            $item = $(this);
+  
+        if (!$item.hasClass('disabled')) {
+            navListItems.removeClass('btn-success').addClass('btn-default');
+            $item.addClass('btn-success');
+            allWells.hide();
+            $target.show();
+            $target.find('input:eq(0)').focus();
+        }
+    });
+  
+    allNextBtn.click(function () {
+        var curStep = $(this).closest(".setup-content"),
+            curStepBtn = curStep.attr("id"),
+            nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+            curInputs = curStep.find("input[type='text'],input[type='url']"),
+            isValid = true;
+  
+        $(".form-group").removeClass("has-error");
+        for (var i = 0; i < curInputs.length; i++) {
+            if (!curInputs[i].validity.valid) {
+                isValid = false;
+                $(curInputs[i]).closest(".form-group").addClass("has-error");
+            }
+        }
+  
+        if (isValid) nextStepWizard.removeAttr('disabled').trigger('click');
+    });
+  
+    $('div.setup-panel div a.btn-success').trigger('click');
+  });
+  
+  $(document).ready(function(){
+    $(".nav-item").click(function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+    });
+  });
+  // document.mainForm.onclick = function(){
+  //     var radVal = document.mainForm.rads.value;
+  //     result.innerHTML = 'You selected: '+radVal;
+  // }
+  $(function() {
+    $('input[name=post-format]').on('click init-post-format', function() {
+        $('#gallery-box').toggle($('#post-format-gallery').prop('checked'));
+    }).trigger('init-post-format');
+  });
+  $(function() {
+    $('input[name=post-format]').on('click init-post-format', function() {
+        $('#gallery-box2').toggle($('#post-format-gallery2').prop('checked'));
+    }).trigger('init-post-format');
+  });
+  $(function() {
+    $('input[name=post-format]').on('click init-post-format', function() {
+        $('#gallery-box3').toggle($('#post-format-gallery3').prop('checked'));
+    }).trigger('init-post-format');
+  });
+  function calculateMD5Hash(file, bufferSize) {
+    var def = Q.defer();
+  
+    var fileReader = new FileReader();
+    var fileSlicer = File.prototype.slice || File.prototype.mozSlice || File.prototype.webkitSlice;
+    var hashAlgorithm = new SparkMD5();
+    var totalParts = Math.ceil(file.size / bufferSize);
+    var currentPart = 0;
+    var startTime = new Date().getTime();
+  
+    fileReader.onload = function(e) {
+      currentPart += 1;
+  
+      def.notify({
+        currentPart: currentPart,
+        totalParts: totalParts
+      });
+  
+      var buffer = e.target.result;
+      hashAlgorithm.appendBinary(buffer);
+  
+      if (currentPart < totalParts) {
+        processNextPart();
+        return;
+      }
+  
+      def.resolve({
+        hashResult: hashAlgorithm.end(),
+        // duration: new Date().getTime() - startTime
+      });
+    };
+  
+    fileReader.onerror = function(e) {
+      def.reject(e);
+    };
+  
+    function processNextPart() {
+      var start = currentPart * bufferSize;
+      var end = Math.min(start + bufferSize, file.size);
+      fileReader.readAsBinaryString(fileSlicer.call(file, start, end));
+    }
+  
+    processNextPart();
+    return def.promise;
+  }
+  
+
+
+
+  function vari(){
+
+
+ 
+//     var decs = document.getElementById("temp").value
+// console.log(decs)
+
+// document.getElementById("document").value =decs;
+
+
+
+var dees = document.getElementById("output").value
+console.log(dees)
+
+document.getElementById("document").value =dees;
+var number = document.getElementById("number").value
+console.log(number)
+
+document.getElementById("document_no").value =number;
+
+
+
+  }
+  function calculate() {
+  
+    var input = document.getElementById('file');
+    if (!input.files.length) {
+      return;
+    }
+  
+    var file = input.files[0];
+    var bufferSize = Math.pow(1024, 2) * 10; // 10MB
+  
+    calculateMD5Hash(file, bufferSize).then(
+      function(result) {
+        // Success
+  
+        
+        console.log(result);
+        console.log(result.hashResult +'dsad')
+     console.log(JSON.stringify(result));
+     console.log(JSON.stringify("hashResult",'dbhkh'));
+        // window.console.log(result)
+      // alert((result.hashResult) +' copy the value and paste it')
+      console.log('dfc')
+      // var input = document.getElementById('temp');
+      //                $('#temp').html(result.hashResult);
+  var str= 'dsad'
+  document.getElementById("output").value = result.hashResult;
+               console.log(str,'dgdf')
+  //         if (result.hasOwnProperty(hashResult)){
+  //     console.log(result.hashResult);           
+  // }
+       
+        // $( window ).on( "load", result );
+        // result.show()
+      //$result.show();
+      },
+      function(err) {
+        // There was an error,
+      },
+      function(progress) {
+        // We get notified of the progress as it is executed
+        console.log(progress.currentPart, 'of', progress.totalParts, 'Total bytes:', progress.currentPart * bufferSize, 'of', progress.totalParts * bufferSize);
+       
+      });
+  }
+  var sha256 = function sha256(ascii) {
+  function rightRotate(value, amount) {
+    return (value>>>amount) | (value<<(32 - amount));
+  };
+  
+  var mathPow = Math.pow;
+  var maxWord = mathPow(2, 32);
+  var lengthProperty = 'length'
+  var i, j; // Used as a counter across the whole file
+  var result = ''
+  
+  var words = [];
+  var asciiBitLength = ascii[lengthProperty]*8;
+  
+  //* caching results is optional - remove/add slash from front of this line to toggle
+  // Initial hash value: first 32 bits of the fractional parts of the square roots of the first 8 primes
+  // (we actually calculate the first 64, but extra values are just ignored)
+  var hash = sha256.h = sha256.h || [];
+  // Round constants: first 32 bits of the fractional parts of the cube roots of the first 64 primes
+  var k = sha256.k = sha256.k || [];
+  var primeCounter = k[lengthProperty];
+  /*/
+  var hash = [], k = [];
+  var primeCounter = 0;
+  //*/
+  
+  var isComposite = {};
+  for (var candidate = 2; primeCounter < 64; candidate++) {
+    if (!isComposite[candidate]) {
+      for (i = 0; i < 313; i += candidate) {
+        isComposite[i] = candidate;
+      }
+      hash[primeCounter] = (mathPow(candidate, .5)*maxWord)|0;
+      k[primeCounter++] = (mathPow(candidate, 1/3)*maxWord)|0;
+    }
+  }
+  
+  ascii += '\x80' // Append Ƈ' bit (plus zero padding)
+  while (ascii[lengthProperty]%64 - 56) ascii += '\x00' // More zero padding
+  for (i = 0; i < ascii[lengthProperty]; i++) {
+    j = ascii.charCodeAt(i);
+    if (j>>8) return; // ASCII check: only accept characters in range 0-255
+    words[i>>2] |= j << ((3 - i)%4)*8;
+  }
+  words[words[lengthProperty]] = ((asciiBitLength/maxWord)|0);
+  words[words[lengthProperty]] = (asciiBitLength)
+  
+  // process each chunk
+  for (j = 0; j < words[lengthProperty];) {
+    var w = words.slice(j, j += 16); // The message is expanded into 64 words as part of the iteration
+    var oldHash = hash;
+    // This is now the undefinedworking hash", often labelled as variables a...g
+    // (we have to truncate as well, otherwise extra entries at the end accumulate
+    hash = hash.slice(0, 8);
+    
+    for (i = 0; i < 64; i++) {
+      var i2 = i + j;
+      // Expand the message into 64 words
+      // Used below if 
+      var w15 = w[i - 15], w2 = w[i - 2];
+  
+      // Iterate
+      var a = hash[0], e = hash[4];
+      var temp1 = hash[7]
+        + (rightRotate(e, 6) ^ rightRotate(e, 11) ^ rightRotate(e, 25)) // S1
+        + ((e&hash[5])^((~e)&hash[6])) // ch
+        + k[i]
+        // Expand the message schedule if needed
+        + (w[i] = (i < 16) ? w[i] : (
+            w[i - 16]
+            + (rightRotate(w15, 7) ^ rightRotate(w15, 18) ^ (w15>>>3)) // s0
+            + w[i - 7]
+            + (rightRotate(w2, 17) ^ rightRotate(w2, 19) ^ (w2>>>10)) // s1
+          )|0
+        );
+      // This is only used once, so *could* be moved below, but it only saves 4 bytes and makes things unreadble
+      var temp2 = (rightRotate(a, 2) ^ rightRotate(a, 13) ^ rightRotate(a, 22)) // S0
+        + ((a&hash[1])^(a&hash[2])^(hash[1]&hash[2])); // maj
+      
+      hash = [(temp1 + temp2)|0].concat(hash); // We don't bother trimming off the extra ones, they're harmless as long as we're truncating when we do the slice()
+      hash[4] = (hash[4] + temp1)|0;
+    }
+    
+    for (i = 0; i < 8; i++) {
+      hash[i] = (hash[i] + oldHash[i])|0;
+    }
+  }
+  
+  for (i = 0; i < 8; i++) {
+    for (j = 3; j + 1; j--) {
+      var b = (hash[i]>>(j*8))&255;
+      result += ((b < 16) ? 0 : '') + b.toString(16);
+    }
+  }
+  return result;
+  };
+  
+  
+  
+  
+      </script>
+  
+  
+  
+  <script>
+      
+    var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+  showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+  showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  }
+  
+function calcuci(){
+
+ document.getElementById('output').value = sha256(document.getElementById('input').value);
+                               
+}
+    
+    </script>
+
+
+
+
+
+  </body>
+  
+  
+  </html>

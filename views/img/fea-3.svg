@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="75px" height="69px" viewBox="0 0 75 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="DataVisualization_Light-Copy" transform="translate(-925.000000, -2643.000000)" stroke="#323232" stroke-width="2">
+            <g id="icon-3" transform="translate(926.000000, 2644.000000)">
+                <path d="M44.494298,56 L0,56 L0,62.776 C0,62.776 0.456066554,67 4.10459899,67 L51,67 C51,67 44.494298,64.58 44.494298,61.4214286 L44.494298,56 Z" id="Stroke-1"></path>
+                <path d="M51.4000772,66.9999934 C51.4000772,66.9999934 59.1604829,67.0604053 59.1604829,55.6536818 L59.1604829,6.37663661 C59.1604829,6.37663661 60.4922543,0 66,0 L13.771542,0 C13.771542,0 8,1.81553703 8,6.83290555 L8,55.6425533" id="Stroke-3"></path>
+                <path d="M59,11 L73,11 L73,6.75864944 C73,6.75864944 72.4011111,0 65.9984444,0" id="Stroke-5"></path>
+                <path d="M17,37 L47,37" id="Stroke-7"></path>
+                <path d="M17,43 L47,43" id="Stroke-9"></path>
+                <path d="M17,24 L47,24" id="Stroke-11"></path>
+                <path d="M17,18 L47,18" id="Stroke-13"></path>
+                <path d="M17,30 L47,30" id="Stroke-15"></path>
+            </g>
+        </g>
+    </g>
+</svg>
