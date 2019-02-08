@@ -258,8 +258,8 @@ adminAddress="0x1E8A1E3423214a4b78BFA87440709867e6163615";
  *     responses:
  *       200:
  *         description: create
- *       404: 
- *	       description: error
+ *       400: 
+ *	       description: Invalid document_no (or) Invalid document
  */
 
 
@@ -370,7 +370,8 @@ console.log(message)
  *     responses:
  *       200:
  *         description: balance
- 
+ *       400:
+ *		   description: Invalid key 
  */
 	
 	  app.get('/view/:id', function(req, res){
