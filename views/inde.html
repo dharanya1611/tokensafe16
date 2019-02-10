@@ -13,7 +13,17 @@
 
     <!-- Custom styles for this template -->
     <link href="/public/css/main.css"  type="text/css"rel="stylesheet"></link>
+
+
+
     <!-- Bootstrap core CSS -->
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+    <link rel='stylesheet' href='/style.css' />
    
   </head>
 
@@ -98,9 +108,9 @@
   <p style="font-size:17px; padding-left:4%;">
   
   1. First enter your first name and last Name.<br>
-  2. In this process we have to create the hash value of your data<br>
-  3. By using the hash value  of your of data and the key value <br>
-   we have create the record, Publish the record,retrive the record
+  2. In this process we have to create the hash value of your data.<br>
+  3. By using the hash value  of your of data and the key value. <br>
+   we have create the record, Publish the record,retrive the record.
   
   </p>
   
@@ -266,7 +276,7 @@
                  <div class="col-sm-7" > 
                   <form action='/create' method="post">
                      <div class="panel-heading">
-                         <h3 class="panel-title" style="font-size:18px ; padding-left:22%">PUBLISH RECORD</h3>
+                         <h3 class="panel-title" style="font-size:18px ; padding-left:22%; font-weight:bolder">PUBLISH RECORD</h3>
                     </div><br>
                     
   
@@ -275,19 +285,19 @@
                      
                         <div class="form-group">
                             <!-- <label class="control-label"   style="font-size:16px; padding-left:34%">Company Name</label> -->
-                           <div>&emsp;&emsp;&emsp;&emsp;&emsp; <label>Key:</label> <input maxlength="200" type="text"    style="font-size:14px;"  required="required" class="form1-control"  name="document_no"
+                           <div> <label>Key:</label> <input maxlength="200" type="text"    style="font-size:14px;"  required="required" class="form1-control"  name="document_no"
                             id="document_no"
                              />
                       
                       </div>    </div>
                         <div class="form-group">
                             <!-- <label class="control-label">Company Address</label> -->
-                       <label>Hashvalue of data</label>     <input maxlength="200" type="text"  style="font-size:14px;" required="required"  class="form1-control" style=" width:62%; " name="document"    id ="document" />
+                       <label>Hashvalue of data</label>  &emsp;   <input maxlength="200" type="text"  style="font-size:14px;" required="required"  class="form1-control" style=" width:62%; " name="document"    id ="document" />
                         </div>
                         <!-- <div style=" padding-left:26%">
                         <button class="btn btn-primary  nextBtn pull-right"  style="background-color:blue"; type="button">Publish</button>
                         </div> -->
-                        <h3 class="panel-title"  style="font-size:18px">Unlock Your Wallet</h3>
+                        <h3 class="panel-title"  style="font-size:18px; font-weight: bolder">Unlock Your Wallet</h3>
 <label>Enter privateKey:</label>
                         <input maxlength="200"  style="font-size:14px; width:63%;"  required="required" class="form1-control" name="privateKey"  id="privateKey"placeholder="Enter Your Private Key" ></input><br><br>
                        
